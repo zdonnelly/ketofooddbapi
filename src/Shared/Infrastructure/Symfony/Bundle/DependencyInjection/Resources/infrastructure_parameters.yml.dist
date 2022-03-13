@@ -1,0 +1,9 @@
+parameters:
+    best_youtube_channel_ever: 'KetoFoodDbApi'
+    async_command_bus_pending_requests_file_path: '/path/to/the/KetoFoodDbApi_pending_requests.dat'
+
+    rabbitmq_host: 'localhost'
+    rabbitmq_port: 5672
+    rabbitmq_vhost: '/'
+    rabbitmq_login: 'KetoFoodDbApi'
+    rabbitmq_password: 'c0d3ly'

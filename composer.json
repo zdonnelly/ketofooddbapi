@@ -1,0 +1,63 @@
+{
+  "name": "solutioncraft/ketofooddb-api",
+  "description": "REST API for KetoFood DB",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Zach Donnelly",
+      "email": "zach@solutioncraft.net"
+    }
+  ],
+  "require": {
+    "ext-iconv": "*",
+    "friendsofsymfony/rest-bundle": "^2.4",
+    "jms/serializer-bundle": "^2.4",
+    "lambdish/phunctional": "^1.0",
+    "ramsey/uuid": "^3.8",
+    "symfony/console": "^4.0",
+    "symfony/dom-crawler": "^4.0",
+    "symfony/flex": "^1.0",
+    "symfony/framework-bundle": "^4.0",
+    "symfony/lts": "^4@dev",
+    "symfony/orm-pack": "^1.0",
+    "symfony/yaml": "^4.0"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "^1.7",
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "~6.5",
+    "symfony/dotenv": "^4.0",
+    "symfony/maker-bundle": "^1.7",
+    "symfony/phpunit-bridge": "^4.0",
+    "symfony/web-server-bundle": "^4.0"
+  },
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "scripts": {
+    "auto-scripts": {
+      "cache:clear": "symfony-cmd",
+      "assets:install %PUBLIC_DIR%": "symfony-cmd"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "KetoFoodDbApi\\": ["src"]
+    },
+    "files": [
+      "src/Shared/utils.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "KetoFoodDbApi\\Tests\\": "tests/src"
+    },
+    "files": [
+      "tests/src/Shared/utils.php"
+    ]
+  }
+}
